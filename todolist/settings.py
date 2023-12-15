@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-aq2f$x+9&=$ab5@2$5^h_z2s)apupkshrn-pk%xw@#o4w#ltu$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['MeffoX.pythonanywhere.com']
+ALLOWED_HOSTS = [
+    'MeffoX.pythonanywhere.com',
+    'localhost:8000',
+    '127.0.0.1'
+]
 
 
 # Application definition
@@ -37,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'todo',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
